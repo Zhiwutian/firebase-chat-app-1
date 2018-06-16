@@ -15,7 +15,7 @@ export default (state = DEFAULT_STATE, action) => {
         case types.UPDATE_CHAT_LOG:
             return {...state, log: action.chatLog};
         case types.CLEAR_CHAT_DATA:
-            return {log: {}, name: '', rooms: {}}
+            return {log: {}, name: '', rooms: {}};
         default:
             return state;
     }
